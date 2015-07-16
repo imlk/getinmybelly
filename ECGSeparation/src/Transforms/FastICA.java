@@ -35,9 +35,9 @@ public class FastICA {
         whitening(input);
         int m = Matrix.getNumOfRows(whitenedVectors);
         int n = Matrix.getNumOfColumns(whitenedVectors);
-        if (m > noComponents) {
-            noComponents = m;
-        }
+//        if (m > noComponents) {
+//            noComponents = m;
+//        }
 
         B = Matrix.random(noComponents, m);
         B = Matrix.mult(
